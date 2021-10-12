@@ -151,14 +151,13 @@ section {
   line-height: 36px;
   text-transform: capitalize;
   color: #000000;
-  font-weight: 300;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
 .scope-of-project .obj {
   margin-top: 40px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .scope-of-project .midhead {
@@ -292,6 +291,143 @@ section {
 }
 
 .problem-challange .row2 .problem-box h4 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #333333;
   margin-bottom: 12px;
+}
+
+.problem-challange .row2 .problem-box p {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #464646;
+  margin-bottom: 0;
+}
+
+.project-process {
+  position: relative;
+  padding: 100px 0 130px;
+  background-image: url("../img/our-process.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-process .heading {
+  text-align: center;
+}
+
+.project-process .heading::before {
+  content: "Process";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.project-process .project-box {
+  margin-top: 60px;
+  padding-right: 20px;
+}
+
+.project-process .project-box .icon {
+  width: auto;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-process .project-box .title {
+  font-size: 30px;
+  color: #4A4A4A;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.project-process .project-box .title::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background: #1761B9;
+  position: absolute;
+  left: 5px;
+  top: 9px;
+}
+
+.project-process .project-box .content {
+  font-size: 18px;
+  line-height: 32px;
+  color: #4D4D4D;
+  padding-left: 20px;
+}
+
+.project-process .project-box .content span {
+  font-weight: bold;
+}
+
+.discover .subhead {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #4D4D4D;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.discover .subhead span {
+  font-weight: bold;
+}
+
+.brainstorming {
+  padding-top: 50px;
+}
+
+.brainstorming .heading {
+  text-align: center;
+}
+
+.brainstorming .heading::before {
+  content: "Brainstorming";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.brainstorming .miro {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.brainstorming .it {
+  width: 100%;
+  max-width: 100%;
+  background: #F9FCFF;
+  padding: 65px 0;
+  margin-top: 80px;
+}
+
+.brainstorming .it .head {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 42px;
+  color: #4A4A4A;
+  margin: 16px 0 8px;
+}
+
+.brainstorming .it .subhead {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4D4D4D;
+  margin-bottom: 30px;
+}
+
+.brainstorming .it .it-img {
+  mix-blend-mode: multiply;
 }
 /*# sourceMappingURL=main.css.map */
