@@ -12,6 +12,10 @@ section{
     max-width: 100%;
 }
 
+.p-rel{
+    position: relative;
+}
+
 .banner{
     background-image: url("../img/bannerBG.jpg");
     background-position: bottom center;
@@ -32,6 +36,7 @@ section{
         line-height: 50px;
         color: #FFFFFF;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     .stats{
@@ -102,11 +107,148 @@ section{
     position: relative;
     &::before{
         position: absolute;
-        content: "Scope";
         font-weight: bold;
         font-size: 92px;
         line-height: 104px;
         color: rgba(146, 146, 146, 0.06);
-        bottom: 20px;
+        top: -70px;
+    }
+}
+
+.scope-of-project{
+    position: relative;
+    .scope-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .heading{
+        &::before{
+            content: "Scope";
+        }
+    }
+    .text{
+        font-size: 22px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: #000000;
+        font-weight: 300;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .obj{
+        @extend .text;
+        margin-top: 40px;
+        font-weight: 400;
+    }
+    .midhead{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 50px;
+        color: #1761B9;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .stats-box{
+        background: linear-gradient(180deg, rgba(210, 231, 255, 0.7) 0%, rgba(175, 207, 245, 0) 100%);
+        border-radius: 8px;
+        padding: 20px 30px;
+        .icon{
+            width: 60px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .cont{
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #1761B9;
+            margin-top: 10px;
+        }
+        .stats{
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 58px;
+            color: #1761B9;
+        }
+    }
+}
+
+.technology-used{
+    .heading{
+        text-align: center;
+        &::before{
+            content: "Technology";
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+    .tech-box{
+        text-align: center;
+        float: left;
+        margin-left: 60px;
+        margin-top: 50px;
+        &:first-child{
+            margin-left: 0;
+        }
+        .text{
+            font-size: 18px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #1F1F1F;
+            margin-top: 10px;
+        }
+    }
+}
+
+.problem-challange{
+    position: relative;
+    .problem-img{
+        position: absolute;
+        right: 0;
+        top: -80px;
+    }
+    .heading{
+        &::before{
+            content: "Problem";
+        }
+    }
+    .text{
+        font-size: 18px;
+        line-height: 32px;
+        color: #464646;
+        margin-top: 25px;
+    }
+    .row2{
+        margin-top: 180px;
+        .problem-box{
+            padding: 60px 35px 45px;
+            background: #FCFCFC;
+            border: 1px solid #EBEBEB;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.02);
+            border-radius: 2px;
+            position: relative;
+            .num{
+                width: 65px;
+                height: 65px;
+                border: 2px solid #1761B9;
+                text-align: center;
+                line-height: 65px;
+                font-size: 26px;
+                border-radius: 50%;
+                color: #1761B9;
+                position: absolute;
+                top: -33px;
+                background: #FFFFFF;
+            }
+            h4{
+                margin-bottom: 12px;
+            }
+        }
     }
 }

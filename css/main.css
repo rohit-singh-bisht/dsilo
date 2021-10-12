@@ -13,6 +13,10 @@ section {
   max-width: 100%;
 }
 
+.p-rel {
+  position: relative;
+}
+
 .banner {
   background-image: url("../img/bannerBG.jpg");
   background-position: bottom center;
@@ -36,6 +40,7 @@ section {
   line-height: 50px;
   color: #FFFFFF;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .banner .stats {
@@ -120,11 +125,173 @@ section {
 
 .heading::before {
   position: absolute;
-  content: "Scope";
   font-weight: bold;
   font-size: 92px;
   line-height: 104px;
   color: rgba(146, 146, 146, 0.06);
-  bottom: 20px;
+  top: -70px;
+}
+
+.scope-of-project {
+  position: relative;
+}
+
+.scope-of-project .scope-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.scope-of-project .heading::before {
+  content: "Scope";
+}
+
+.scope-of-project .text, .scope-of-project .obj {
+  font-size: 22px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.scope-of-project .obj {
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.scope-of-project .midhead {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #1761B9;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.scope-of-project .stats-box {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(210, 231, 255, 0.7)), to(rgba(175, 207, 245, 0)));
+  background: linear-gradient(180deg, rgba(210, 231, 255, 0.7) 0%, rgba(175, 207, 245, 0) 100%);
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+
+.scope-of-project .stats-box .icon {
+  width: 60px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scope-of-project .stats-box .cont {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #1761B9;
+  margin-top: 10px;
+}
+
+.scope-of-project .stats-box .stats {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 58px;
+  color: #1761B9;
+}
+
+.technology-used .heading {
+  text-align: center;
+}
+
+.technology-used .heading::before {
+  content: "Technology";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.technology-used .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technology-used .tech-box {
+  text-align: center;
+  float: left;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.technology-used .tech-box:first-child {
+  margin-left: 0;
+}
+
+.technology-used .tech-box .text, .technology-used .tech-box .scope-of-project .obj, .scope-of-project .technology-used .tech-box .obj {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #1F1F1F;
+  margin-top: 10px;
+}
+
+.problem-challange {
+  position: relative;
+}
+
+.problem-challange .problem-img {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+
+.problem-challange .heading::before {
+  content: "Problem";
+}
+
+.problem-challange .text, .problem-challange .scope-of-project .obj, .scope-of-project .problem-challange .obj {
+  font-size: 18px;
+  line-height: 32px;
+  color: #464646;
+  margin-top: 25px;
+}
+
+.problem-challange .row2 {
+  margin-top: 180px;
+}
+
+.problem-challange .row2 .problem-box {
+  padding: 60px 35px 45px;
+  background: #FCFCFC;
+  border: 1px solid #EBEBEB;
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  position: relative;
+}
+
+.problem-challange .row2 .problem-box .num {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #1761B9;
+  text-align: center;
+  line-height: 65px;
+  font-size: 26px;
+  border-radius: 50%;
+  color: #1761B9;
+  position: absolute;
+  top: -33px;
+  background: #FFFFFF;
+}
+
+.problem-challange .row2 .problem-box h4 {
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=main.css.map */
