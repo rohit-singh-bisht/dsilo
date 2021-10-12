@@ -408,11 +408,15 @@ section {
   width: 100%;
   max-width: 100%;
   background: #F9FCFF;
-  padding: 65px 0;
+  padding: 70px 0;
   margin-top: 80px;
 }
 
-.brainstorming .it .head {
+.brainstorming .journey {
+  padding-top: 70px;
+}
+
+.brainstorming .suggest .head {
   font-weight: 500;
   font-size: 30px;
   line-height: 42px;
@@ -420,14 +424,99 @@ section {
   margin: 16px 0 8px;
 }
 
-.brainstorming .it .subhead {
+.brainstorming .suggest .subhead {
   font-size: 18px;
   line-height: 30px;
   color: #4D4D4D;
   margin-bottom: 30px;
 }
 
-.brainstorming .it .it-img {
+.brainstorming .suggest .it-img {
   mix-blend-mode: multiply;
+}
+
+.define {
+  padding: 80px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(165, 195, 230, 0.1)), to(rgba(165, 195, 230, 0)));
+  background: linear-gradient(180deg, rgba(165, 195, 230, 0.1) 0%, rgba(165, 195, 230, 0) 100%);
+}
+
+.define .subhead {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #4D4D4D;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.define .subhead span {
+  font-weight: bold;
+}
+
+.define .sol-for-prog {
+  margin-top: 35px;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.define .sol-for-prog .solution-img {
+  position: absolute;
+  right: 0;
+  top: 180px;
+}
+
+.define .sol-for-prog .heading {
+  text-align: center;
+}
+
+.define .sol-for-prog .heading::before {
+  content: "Solutions";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.define .sol-for-prog .solution-box {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 16px rgba(26, 34, 43, 0.08);
+          box-shadow: 0px 8px 16px rgba(26, 34, 43, 0.08);
+  border-radius: 10px;
+  padding: 60px 30px 42px;
+  position: relative;
+  margin-top: 90px;
+}
+
+.define .sol-for-prog .solution-box .icon {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+}
+
+.define .sol-for-prog .solution-box .head {
+  font-size: 22px;
+  line-height: 34px;
+  color: #333333;
+  margin: 16px 0;
+}
+
+.define .sol-for-prog .solution-box .content {
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #1F1F1F;
+  margin-bottom: 0;
+}
+
+.wireframe .heading {
+  text-align: center;
+}
+
+.wireframe .heading::before {
+  content: "Wireframes";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
