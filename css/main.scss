@@ -433,6 +433,7 @@ section{
 }
 
 .wireframe{
+    margin-bottom: -220px;
     .heading{
         text-align: center;
         &::before{
@@ -440,5 +441,126 @@ section{
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+}
+
+.design{
+    background-image: url("../img/bannerBG.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    padding-top: 150px;
+    .heading{
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+        z-index: -1;
+        &.bottom{
+            &::before{
+                content: "Design System";
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            color: #1761B9;
+        }
+    }
+    .subhead{
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+}
+
+.images{
+    .color{
+        margin-top: 50px;
+    }
+}
+
+.flow{
+    margin-top: 240px;
+    .image-wrapper{
+        float: left;
+        width: 50%;
+        &:nth-child(2n + 1){
+            margin-top: -130px;
+        }
+        &:nth-child(2n){
+            margin-top: 130px;
+        }
+        .head{
+            font-size: 28px;
+            line-height: 40px;
+            color: #1761B9;
+            padding-left: 50px;
+            position: relative;
+            margin-bottom: 20px;
+            &::before{
+                font-size: 60px;
+                font-weight: bold;
+                color: #1761B9;
+                opacity: 0.1;
+                position: absolute;
+                left: 10px;
+                top: 0;
+            }
+            &.one::before{
+                content: "1";
+            }
+            &.two::before{
+                content: "2";
+            }
+            &.three::before{
+                content: "3";
+            }
+            &.four::before{
+                content: "4";
+            }
+            &.five::before{
+                content: "5";
+            }
+            &.six::before{
+                content: "6";
+            }
+            &.seven::before{
+                content: "7";
+            }
+        }
+    }
+    
+}
+
+.prototype{
+    .heading{
+        text-align: center;
+        margin-bottom: 60px;
+        &::before{
+            content: "Prototyping";
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .prototype-img{
+        mix-blend-mode: darken;
+    }
+}
+
+
+footer{
+    background-image: url("../img/footerBG.png");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    .thanks{
+        text-align: center;
+        font-size: 44px;
+        line-height: 56px;
+        color: #FFFFFF;
     }
 }

@@ -509,6 +509,10 @@ section {
   margin-bottom: 0;
 }
 
+.wireframe {
+  margin-bottom: -220px;
+}
+
 .wireframe .heading {
   text-align: center;
 }
@@ -518,5 +522,141 @@ section {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.design {
+  background-image: url("../img/bannerBG.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  padding-top: 150px;
+}
+
+.design .heading {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  z-index: -1;
+}
+
+.design .heading.bottom {
+  color: #1761B9;
+}
+
+.design .heading.bottom::before {
+  content: "Design System";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.design .subhead {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.images .color {
+  margin-top: 50px;
+}
+
+.flow {
+  margin-top: 240px;
+}
+
+.flow .image-wrapper {
+  float: left;
+  width: 50%;
+}
+
+.flow .image-wrapper:nth-child(2n + 1) {
+  margin-top: -130px;
+}
+
+.flow .image-wrapper:nth-child(2n) {
+  margin-top: 130px;
+}
+
+.flow .image-wrapper .head {
+  font-size: 28px;
+  line-height: 40px;
+  color: #1761B9;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.flow .image-wrapper .head::before {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1761B9;
+  opacity: 0.1;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.flow .image-wrapper .head.one::before {
+  content: "1";
+}
+
+.flow .image-wrapper .head.two::before {
+  content: "2";
+}
+
+.flow .image-wrapper .head.three::before {
+  content: "3";
+}
+
+.flow .image-wrapper .head.four::before {
+  content: "4";
+}
+
+.flow .image-wrapper .head.five::before {
+  content: "5";
+}
+
+.flow .image-wrapper .head.six::before {
+  content: "6";
+}
+
+.flow .image-wrapper .head.seven::before {
+  content: "7";
+}
+
+.prototype .heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.prototype .heading::before {
+  content: "Prototyping";
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.prototype .prototype-img {
+  mix-blend-mode: darken;
+}
+
+footer {
+  background-image: url("../img/footerBG.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  float: left;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+footer .thanks {
+  text-align: center;
+  font-size: 44px;
+  line-height: 56px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
