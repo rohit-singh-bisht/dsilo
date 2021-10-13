@@ -81,6 +81,17 @@ section {
   margin-bottom: -60px;
 }
 
+@media only screen and (max-width: 768px) {
+  .banner .banner-title {
+    font-size: 50px;
+    line-height: 64px;
+  }
+  .banner .banner-subtitle {
+    font-size: 35px;
+    line-height: 49px;
+  }
+}
+
 .client-info .container {
   background: #FFFFFF;
   border: 1px solid #C1C1C1;
@@ -202,6 +213,19 @@ section {
   color: #1761B9;
 }
 
+@media only screen and (max-width: 768px) {
+  .scope-of-project .scope-img {
+    position: relative;
+    right: auto;
+    top: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .scope-of-project .obj br {
+    display: none;
+  }
+}
+
 .technology-used .heading {
   text-align: center;
 }
@@ -303,6 +327,20 @@ section {
   text-transform: capitalize;
   color: #464646;
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .problem-challange .problem-img {
+    position: relative;
+    top: auto;
+    right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .problem-challange .row2 .problem-box {
+    margin-bottom: 60px;
+    padding: 50px 30px 35px;
+  }
 }
 
 .project-process {
@@ -509,6 +547,17 @@ section {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .define .sol-for-prog .solution-img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  .define .subhead br {
+    display: none;
+  }
+}
+
 .wireframe {
   margin-bottom: -220px;
 }
@@ -624,6 +673,22 @@ section {
 
 .flow .image-wrapper .head.seven::before {
   content: "7";
+}
+
+@media only screen and (max-width: 768px) {
+  .flow {
+    margin-top: 0;
+  }
+  .flow .image-wrapper {
+    clear: both;
+    width: 100%;
+  }
+  .flow .image-wrapper:nth-child(2n + 1) {
+    margin-top: 50px;
+  }
+  .flow .image-wrapper:nth-child(2n) {
+    margin-top: 50px;
+  }
 }
 
 .prototype .heading {

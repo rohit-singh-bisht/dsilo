@@ -64,6 +64,18 @@ section{
     .banner-img{
         margin-bottom: -60px;
     }
+
+    @media only screen and (max-width: 768px){
+        .banner-title{
+            font-size: 50px;
+            line-height: 64px;
+        }
+        .banner-subtitle{
+            font-size: 35px;
+            line-height: 49px;
+        }
+    }
+
 }
 
 
@@ -172,6 +184,24 @@ section{
             color: #1761B9;
         }
     }
+
+    @media only screen and (max-width: 768px){
+        .scope-img{
+            position: relative;
+            right: auto;
+            top: auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .obj{
+            br{
+                display: none;
+            }
+        }
+        .stats-box{
+
+        }
+    }
 }
 
 .technology-used{
@@ -257,6 +287,24 @@ section{
                 text-transform: capitalize;
                 color: #464646;
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+
+        .problem-img{
+            position: relative;
+            top: auto;
+            right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .row2{
+            .problem-box{
+                margin-bottom: 60px;
+                padding: 50px 30px 35px;
             }
         }
     }
@@ -430,6 +478,21 @@ section{
             }
         }
     }
+
+    @media only screen and (max-width: 768px){
+        .sol-for-prog{
+            .solution-img{
+                position: relative;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .subhead{
+            br{
+                display: none;
+            }
+        }
+    }
 }
 
 .wireframe{
@@ -529,7 +592,21 @@ section{
             }
         }
     }
-    
+    @media only screen and (max-width: 768px){
+
+        margin-top: 0;
+
+        .image-wrapper{
+            clear: both;
+            width: 100%;
+            &:nth-child(2n + 1){
+                margin-top: 50px;
+            }
+            &:nth-child(2n){
+                margin-top: 50px;
+            }
+        }
+    }
 }
 
 .prototype{
