@@ -615,6 +615,9 @@ section{
         }
         .heading{
             text-align: center;
+            br{
+                display: none;
+            }
             &::before{
                 content: "Solutions";
                 left: 50%;
@@ -651,10 +654,34 @@ section{
 
     @media only screen and (max-width: 768px){
         .sol-for-prog{
+            .heading{
+                br{
+                    display: block;
+                }
+            }
             .solution-img{
                 position: relative;
                 max-width: 100%;
                 height: auto;
+            }
+            .solution-box{
+                padding: 40px 30px 40px;
+                margin-top: 60px;
+                .icon{
+                    width: 60px;
+                    top: -30px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .head{
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+                .content{
+                    font-size: 14px;
+                    line-height: 26px;
+                }
             }
         }
         .subhead{
@@ -675,6 +702,10 @@ section{
             transform: translateX(-50%);
         }
     }
+
+    @media only screen and (max-width: 768px){
+        margin-bottom: 0px;
+    }
 }
 
 .design{
@@ -688,7 +719,6 @@ section{
         margin-bottom: 10px;
         margin-top: 10px;
         text-align: center;
-        z-index: -1;
         &.bottom{
             &::before{
                 content: "Design System";
@@ -703,6 +733,10 @@ section{
         font-size: 18px;
         line-height: 32px;
         color: #FFFFFF;
+    }
+
+    @media only screen and (max-width: 768px){
+        padding-top: 40px;
     }
 }
 
@@ -775,6 +809,17 @@ section{
             &:nth-child(2n){
                 margin-top: 50px;
             }
+            .head{
+                text-align: center;
+                padding-left: 0;
+                font-size: 24px;
+                line-height: 32px;
+                &::before{
+                    font-size: 36px;
+                    left: 45%;
+                    top: -30px;
+                }
+            }
         }
     }
 }
@@ -783,6 +828,9 @@ section{
     .heading{
         text-align: center;
         margin-bottom: 60px;
+        br{
+            display: none;
+        }
         &::before{
             content: "Prototyping";
             left: 50%;
@@ -791,6 +839,15 @@ section{
     }
     .prototype-img{
         mix-blend-mode: darken;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .heading{
+            margin-bottom: 25px;
+            br{
+                display: block;
+            }
+        }
     }
 }
 
@@ -809,5 +866,15 @@ footer{
         font-size: 44px;
         line-height: 56px;
         color: #FFFFFF;
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-size: cover;
+        padding-top: 130px;
+        padding-bottom: 90px;
+        .thanks{
+            font-size: 36px;
+            margin-bottom: 0;
+        }
     }
 }

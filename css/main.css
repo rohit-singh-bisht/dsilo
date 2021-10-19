@@ -699,6 +699,10 @@ section {
   text-align: center;
 }
 
+.define .sol-for-prog .heading br {
+  display: none;
+}
+
 .define .sol-for-prog .heading::before {
   content: "Solutions";
   left: 50%;
@@ -738,10 +742,32 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  .define .sol-for-prog .heading br {
+    display: block;
+  }
   .define .sol-for-prog .solution-img {
     position: relative;
     max-width: 100%;
     height: auto;
+  }
+  .define .sol-for-prog .solution-box {
+    padding: 40px 30px 40px;
+    margin-top: 60px;
+  }
+  .define .sol-for-prog .solution-box .icon {
+    width: 60px;
+    top: -30px;
+  }
+  .define .sol-for-prog .solution-box .icon img {
+    max-width: 100%;
+  }
+  .define .sol-for-prog .solution-box .head {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .define .sol-for-prog .solution-box .content {
+    font-size: 14px;
+    line-height: 26px;
   }
   .define .subhead br {
     display: none;
@@ -763,6 +789,12 @@ section {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 768px) {
+  .wireframe {
+    margin-bottom: 0px;
+  }
+}
+
 .design {
   background-image: url("../img/bannerBG.jpg");
   background-position: top center;
@@ -776,7 +808,6 @@ section {
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
-  z-index: -1;
 }
 
 .design .heading.bottom {
@@ -795,6 +826,12 @@ section {
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .design {
+    padding-top: 40px;
+  }
 }
 
 .images .color {
@@ -879,11 +916,26 @@ section {
   .flow .image-wrapper:nth-child(2n) {
     margin-top: 50px;
   }
+  .flow .image-wrapper .head {
+    text-align: center;
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .flow .image-wrapper .head::before {
+    font-size: 36px;
+    left: 45%;
+    top: -30px;
+  }
 }
 
 .prototype .heading {
   text-align: center;
   margin-bottom: 60px;
+}
+
+.prototype .heading br {
+  display: none;
 }
 
 .prototype .heading::before {
@@ -895,6 +947,15 @@ section {
 
 .prototype .prototype-img {
   mix-blend-mode: darken;
+}
+
+@media only screen and (max-width: 768px) {
+  .prototype .heading {
+    margin-bottom: 25px;
+  }
+  .prototype .heading br {
+    display: block;
+  }
 }
 
 footer {
@@ -913,5 +974,17 @@ footer .thanks {
   font-size: 44px;
   line-height: 56px;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 90px;
+  }
+  footer .thanks {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
