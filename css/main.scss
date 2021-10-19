@@ -10,6 +10,11 @@ section{
     float: left;
     width: 100%;
     max-width: 100%;
+
+    @media only screen and (max-width: 768px){
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .p-rel{
@@ -67,12 +72,31 @@ section{
 
     @media only screen and (max-width: 768px){
         .banner-title{
-            font-size: 50px;
-            line-height: 64px;
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 5px;
         }
         .banner-subtitle{
-            font-size: 35px;
-            line-height: 49px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .stats{
+            padding: 17px 17px;
+            margin-bottom: 25px;
+            h3{
+                font-size: 24px;
+                line-height: 36px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                br{
+                    display: none;
+                }
+            }
+        }
+        .banner-img{
+            margin-bottom: 0;
         }
     }
 
@@ -108,6 +132,19 @@ section{
             color: #1761B9;
         }
     }
+
+    @media only screen and (max-width: 768px){
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .container{
+            width: 1100px;
+            padding: 20px 30px;
+            margin-left: 30px;
+        }
+    }
 }
 
 
@@ -124,6 +161,16 @@ section{
         line-height: 104px;
         color: rgba(146, 146, 146, 0.06);
         top: -70px;
+    }
+
+    @media only screen and (max-width: 768px){
+        font-size: 24px;
+        line-height: 34px;
+        &::before{
+            font-size: 36px;
+            line-height: 48px;
+            top: -30px;
+        }
     }
 }
 
@@ -186,20 +233,41 @@ section{
     }
 
     @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column-reverse;
         .scope-img{
             position: relative;
             right: auto;
             top: auto;
             max-width: 100%;
             height: auto;
+            margin-bottom: 30px;
+        }
+        .text{
+            font-size: 16px;
+            line-height: 24px;
         }
         .obj{
+            margin-top: 20px;
             br{
                 display: none;
             }
         }
+        .midhead{
+            display: none;
+        }
         .stats-box{
-
+            padding: 13px 18px;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            .cont{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .stats{
+                font-size: 24px;
+                line-height: 26px;
+            }
         }
     }
 }
@@ -231,6 +299,23 @@ section{
             text-transform: capitalize;
             color: #1F1F1F;
             margin-top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .flex{
+            flex-wrap: wrap;
+            .tech-box{
+                width: 25%;
+                margin-left: 0;
+                margin-top: 15px;
+                img{
+                    width: 40px;
+                }
+                .text{
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
@@ -294,17 +379,41 @@ section{
     @media only screen and (max-width: 768px){
 
         .problem-img{
-            position: relative;
-            top: auto;
-            right: auto;
+            position: absolute;
+            top: 360px;
+            right: 0;
             max-width: 100%;
             height: auto;
         }
 
         .row2{
+            margin-top: 70px;
             .problem-box{
                 margin-bottom: 60px;
-                padding: 50px 30px 35px;
+                padding: 40px 20px 25px;
+                .num{
+                    font-size: 20px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    top: -25px;
+                }
+                h4{
+                    font-size: 18px;
+                    line-height: 26px;
+                    br{
+                        display: none;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .abc{
+                .problem-box{
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -362,6 +471,36 @@ section{
             }
         }
     }
+
+    @media only screen and (max-width: 768px){
+        padding: 50px 0;
+        .project-box{
+            text-align: center;
+            padding-right: 0;
+            margin-top: 30px;
+            .icon{
+                justify-content: center;
+            }
+            .title{
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                padding-left: 0;
+                &::before{
+                    height: 2px;
+                    width: 30px;
+                    left: calc((100% - 30px)/2);
+                    top: 30px;
+                }
+            }
+            .content{
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0;
+            }
+        }
+    }
 }
 
 @mixin subhead {
@@ -386,6 +525,9 @@ section{
     padding-top: 50px;
     .heading{
         text-align: center;
+        br{
+            display: none;
+        }
         &::before{
             content: "Brainstorming";
             left: 50%;
@@ -420,9 +562,37 @@ section{
             line-height: 30px;
             color: #4D4D4D;
             margin-bottom: 30px;
+            span{
+                font-weight: 600;
+            }
         }
         .it-img{
             mix-blend-mode: multiply;
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .heading{
+            br{
+                display: block;
+            }
+        }
+        .it{
+            margin-top: 40px;
+            padding: 40px 0;
+        }
+        .journey{
+            padding: 40px 0;
+        }
+        .suggest{
+            .head{
+                font-size: 24px;
+                line-height: 36px;
+            }
+            .subhead{
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
     }
 }

@@ -13,6 +13,13 @@ section {
   max-width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .p-rel {
   position: relative;
 }
@@ -83,12 +90,31 @@ section {
 
 @media only screen and (max-width: 768px) {
   .banner .banner-title {
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 5px;
   }
   .banner .banner-subtitle {
-    font-size: 35px;
-    line-height: 49px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .banner .stats {
+    padding: 17px 17px;
+    margin-bottom: 25px;
+  }
+  .banner .stats h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .banner .stats p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .banner .stats p br {
+    display: none;
+  }
+  .banner .banner-img {
+    margin-bottom: 0;
   }
 }
 
@@ -126,6 +152,20 @@ section {
   color: #1761B9;
 }
 
+@media only screen and (max-width: 768px) {
+  .client-info {
+    overflow-x: scroll;
+  }
+  .client-info::-webkit-scrollbar {
+    display: none;
+  }
+  .client-info .container {
+    width: 1100px;
+    padding: 20px 30px;
+    margin-left: 30px;
+  }
+}
+
 .heading {
   font-weight: bold;
   font-size: 44px;
@@ -141,6 +181,18 @@ section {
   line-height: 104px;
   color: rgba(146, 146, 146, 0.06);
   top: -70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .heading::before {
+    font-size: 36px;
+    line-height: 48px;
+    top: -30px;
+  }
 }
 
 .scope-of-project {
@@ -214,15 +266,48 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  .scope-of-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .scope-of-project .scope-img {
     position: relative;
     right: auto;
     top: auto;
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
+  }
+  .scope-of-project .text, .scope-of-project .obj {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .scope-of-project .obj {
+    margin-top: 20px;
   }
   .scope-of-project .obj br {
     display: none;
+  }
+  .scope-of-project .midhead {
+    display: none;
+  }
+  .scope-of-project .stats-box {
+    padding: 13px 18px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  .scope-of-project .stats-box .cont {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .scope-of-project .stats-box .stats {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 
@@ -263,6 +348,24 @@ section {
   text-transform: capitalize;
   color: #1F1F1F;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .technology-used .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .technology-used .flex .tech-box {
+    width: 25%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .technology-used .flex .tech-box img {
+    width: 40px;
+  }
+  .technology-used .flex .tech-box .text, .technology-used .flex .tech-box .scope-of-project .obj, .scope-of-project .technology-used .flex .tech-box .obj {
+    font-size: 16px;
+  }
 }
 
 .problem-challange {
@@ -331,15 +434,39 @@ section {
 
 @media only screen and (max-width: 768px) {
   .problem-challange .problem-img {
-    position: relative;
-    top: auto;
-    right: auto;
+    position: absolute;
+    top: 360px;
+    right: 0;
     max-width: 100%;
     height: auto;
   }
+  .problem-challange .row2 {
+    margin-top: 70px;
+  }
   .problem-challange .row2 .problem-box {
     margin-bottom: 60px;
-    padding: 50px 30px 35px;
+    padding: 40px 20px 25px;
+  }
+  .problem-challange .row2 .problem-box .num {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    top: -25px;
+  }
+  .problem-challange .row2 .problem-box h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .problem-challange .row2 .problem-box h4 br {
+    display: none;
+  }
+  .problem-challange .row2 .problem-box p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .problem-challange .row2 .abc .problem-box {
+    margin-bottom: 0;
   }
 }
 
@@ -409,6 +536,40 @@ section {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .project-process {
+    padding: 50px 0;
+  }
+  .project-process .project-box {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  .project-process .project-box .icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-process .project-box .title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .project-process .project-box .title::before {
+    height: 2px;
+    width: 30px;
+    left: calc((100% - 30px)/2);
+    top: 30px;
+  }
+  .project-process .project-box .content {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+  }
+}
+
 .discover .subhead {
   font-size: 18px;
   line-height: 32px;
@@ -428,6 +589,10 @@ section {
 
 .brainstorming .heading {
   text-align: center;
+}
+
+.brainstorming .heading br {
+  display: none;
 }
 
 .brainstorming .heading::before {
@@ -469,8 +634,33 @@ section {
   margin-bottom: 30px;
 }
 
+.brainstorming .suggest .subhead span {
+  font-weight: 600;
+}
+
 .brainstorming .suggest .it-img {
   mix-blend-mode: multiply;
+}
+
+@media only screen and (max-width: 768px) {
+  .brainstorming .heading br {
+    display: block;
+  }
+  .brainstorming .it {
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+  .brainstorming .journey {
+    padding: 40px 0;
+  }
+  .brainstorming .suggest .head {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .brainstorming .suggest .subhead {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .define {
